@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multitier Architecture — Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h2>Internet Terminology</h2>
+    <p>Topic 1 — Reference</p>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="www.html"><span class="nav-counter">01</span> World Wide Web</a></li>
+    <li><a href="tcp-ip.html"><span class="nav-counter">02</span> TCP/IP</a></li>
+    <li><a href="web-browsers.html"><span class="nav-counter">03</span> Web Browsers</a></li>
+    <li><a href="web-servers.html"><span class="nav-counter">04</span> Web Servers</a></li>
+    <li><a href="url.html"><span class="nav-counter">05</span> URL</a></li>
+    <li><a href="dns.html"><span class="nav-counter">06</span> DNS</a></li>
+    <li><a href="http.html"><span class="nav-counter">07</span> HTTP</a></li>
+    <li><a href="intranet.html"><span class="nav-counter">08</span> Intranet</a></li>
+    <li><a href="extranet.html"><span class="nav-counter">09</span> Extranet</a></li>
+    <li><a href="multitier.html" class="active"><span class="nav-counter">10</span> Multitier Architecture</a></li>
+    <li><a href="ftp.html"><span class="nav-counter">11</span> FTP</a></li>
+    <li><a href="html.html"><span class="nav-counter">12</span> HTML</a></li>
+    <li><a href="web1.html"><span class="nav-counter">13</span> Web 1.0</a></li>
+    <li><a href="web2.html"><span class="nav-counter">14</span> Web 2.0</a></li>
+    <li><a href="web3.html"><span class="nav-counter">15</span> Web 3.0</a></li>
+    <li><a href="web4.html"><span class="nav-counter">16</span> Web 4.0</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="term-label">Term 10 &mdash; n-Tier / 3-Tier</div>
+    <h1>Multitier Architecture</h1>
+    <p class="tagline">A software design pattern that separates an application into distinct layers — each with a specific role — to improve scalability, maintainability, and security.</p>
+  </div>
+
+  <div class="content">
+    <div class="img-block">
+      <img src="images/multitier.svg" alt="Three-tier architecture diagram showing presentation, logic, and data layers" />
+      <div class="img-caption">&#9654; The classic 3-tier architecture — presentation, application, and data.</div>
+    </div>
+
+    <div class="section">
+      <h2>What is Multitier Architecture?</h2>
+      <p>Multitier architecture (also called n-tier architecture) is a client-server design where an application's components are separated into distinct tiers. Each tier is responsible for a specific concern and communicates only with adjacent tiers.</p><p>The most common form is the <strong>3-tier architecture</strong>: Presentation → Application → Data.</p>
+    </div>
+    <div class="section">
+      <h2>The Three Tiers</h2>
+      <div class="key-facts"><div class="fact"><span class="fact-label">Tier 1 — Presentation</span><p>The user interface layer — what users see in their <a href="web-browsers.html">browser</a>. Built with <a href="html.html">HTML</a>, CSS, and JavaScript.</p></div><div class="fact"><span class="fact-label">Tier 2 — Application (Logic)</span><p>The business logic layer — processes data, applies rules, handles requests. Built with Python, Java, PHP, Node.js, etc.</p></div><div class="fact"><span class="fact-label">Tier 3 — Data</span><p>The database layer — stores and retrieves persistent data. Uses SQL or NoSQL databases.</p></div></div>
+    </div>
+    <div class="section">
+      <h2>Why Separate Tiers?</h2>
+      <div class="highlight-box"><span class="label">Key Benefits</span><p>Each tier can be scaled independently · Teams can work on different tiers simultaneously · Security: databases are never directly exposed to users · Easier maintenance and updates · Reusability of logic across multiple front-ends (web, mobile, API).</p></div>
+    </div>
+    <div class="section">
+      <h2>Beyond 3 Tiers</h2>
+      <p>Large-scale systems may add more tiers: caching layers (Redis, Memcached), CDN layers, microservice layers, and message queues. Cloud-native applications often decompose the application tier further into dozens of independent microservices.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="extranet.html">← <div><span>Extranet</span>Previous</div></a>
+    <a href="ftp.html"><div><span>FTP</span>Next</div> →</a>
+  </div>
+</main>
+
+</body>
+</html>

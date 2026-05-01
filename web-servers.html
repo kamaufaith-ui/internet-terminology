@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Servers — Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h2>Internet Terminology</h2>
+    <p>Topic 1 — Reference</p>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="www.html"><span class="nav-counter">01</span> World Wide Web</a></li>
+    <li><a href="tcp-ip.html"><span class="nav-counter">02</span> TCP/IP</a></li>
+    <li><a href="web-browsers.html"><span class="nav-counter">03</span> Web Browsers</a></li>
+    <li><a href="web-servers.html" class="active"><span class="nav-counter">04</span> Web Servers</a></li>
+    <li><a href="url.html"><span class="nav-counter">05</span> URL</a></li>
+    <li><a href="dns.html"><span class="nav-counter">06</span> DNS</a></li>
+    <li><a href="http.html"><span class="nav-counter">07</span> HTTP</a></li>
+    <li><a href="intranet.html"><span class="nav-counter">08</span> Intranet</a></li>
+    <li><a href="extranet.html"><span class="nav-counter">09</span> Extranet</a></li>
+    <li><a href="multitier.html"><span class="nav-counter">10</span> Multitier Architecture</a></li>
+    <li><a href="ftp.html"><span class="nav-counter">11</span> FTP</a></li>
+    <li><a href="html.html"><span class="nav-counter">12</span> HTML</a></li>
+    <li><a href="web1.html"><span class="nav-counter">13</span> Web 1.0</a></li>
+    <li><a href="web2.html"><span class="nav-counter">14</span> Web 2.0</a></li>
+    <li><a href="web3.html"><span class="nav-counter">15</span> Web 3.0</a></li>
+    <li><a href="web4.html"><span class="nav-counter">16</span> Web 4.0</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="term-label">Term 04 &mdash; Host Infrastructure</div>
+    <h1>Web Servers</h1>
+    <p class="tagline">Specialised software and hardware systems that store, process, and deliver web content to clients upon request.</p>
+  </div>
+
+  <div class="content">
+    <div class="img-block">
+      <img src="images/web-server.svg" alt="Server racks in a data centre" />
+      <div class="img-caption">&#9654; Web servers housed in data centres — always on, always listening.</div>
+    </div>
+
+    <div class="section">
+      <h2>What is a Web Server?</h2>
+      <p>A web server is both the hardware (a computer) and the software (a program) that stores web files and delivers them to <a href="web-browsers.html">browsers</a> via <a href="http.html">HTTP</a>. When you visit a website, your browser sends a request to a web server, which responds with the requested content.</p><p>Popular web server software includes <strong>Apache</strong>, <strong>Nginx</strong>, <strong>Microsoft IIS</strong>, and <strong>LiteSpeed</strong>.</p>
+    </div>
+    <div class="section">
+      <h2>How a Web Server Works</h2>
+      <p>A web server listens for incoming connections on a network port (typically port 80 for HTTP and 443 for HTTPS). When a request arrives, it locates the requested resource, processes any server-side logic, and returns a response — usually an HTML page, image, or data in JSON format.</p><div class="highlight-box"><span class="label">Request → Response</span><p>Browser sends GET /index.html → Server finds the file → Server responds with 200 OK + HTML content.</p></div>
+    </div>
+    <div class="section">
+      <h2>Static vs Dynamic Content</h2>
+      <div class="key-facts"><div class="fact"><span class="fact-label">Static Server</span><p>Serves pre-built files (HTML, images, CSS) directly from disk without processing.</p></div><div class="fact"><span class="fact-label">Dynamic Server</span><p>Runs application code (PHP, Python, Node.js) to generate responses on the fly, often querying databases.</p></div></div>
+    </div>
+    <div class="section">
+      <h2>Role in Architecture</h2>
+      <p>Web servers are a central tier in <a href="multitier.html">multitier architecture</a>, sitting between the client (browser) and backend services (databases, APIs). Modern cloud infrastructure uses load balancers to distribute traffic across many server instances for high availability and scale.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="web-browsers.html">← <div><span>Web Browsers</span>Previous</div></a>
+    <a href="url.html"><div><span>URL</span>Next</div> →</a>
+  </div>
+</main>
+
+</body>
+</html>

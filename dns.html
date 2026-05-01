@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domain Name Server — Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h2>Internet Terminology</h2>
+    <p>Topic 1 — Reference</p>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="www.html"><span class="nav-counter">01</span> World Wide Web</a></li>
+    <li><a href="tcp-ip.html"><span class="nav-counter">02</span> TCP/IP</a></li>
+    <li><a href="web-browsers.html"><span class="nav-counter">03</span> Web Browsers</a></li>
+    <li><a href="web-servers.html"><span class="nav-counter">04</span> Web Servers</a></li>
+    <li><a href="url.html"><span class="nav-counter">05</span> URL</a></li>
+    <li><a href="dns.html" class="active"><span class="nav-counter">06</span> DNS</a></li>
+    <li><a href="http.html"><span class="nav-counter">07</span> HTTP</a></li>
+    <li><a href="intranet.html"><span class="nav-counter">08</span> Intranet</a></li>
+    <li><a href="extranet.html"><span class="nav-counter">09</span> Extranet</a></li>
+    <li><a href="multitier.html"><span class="nav-counter">10</span> Multitier Architecture</a></li>
+    <li><a href="ftp.html"><span class="nav-counter">11</span> FTP</a></li>
+    <li><a href="html.html"><span class="nav-counter">12</span> HTML</a></li>
+    <li><a href="web1.html"><span class="nav-counter">13</span> Web 1.0</a></li>
+    <li><a href="web2.html"><span class="nav-counter">14</span> Web 2.0</a></li>
+    <li><a href="web3.html"><span class="nav-counter">15</span> Web 3.0</a></li>
+    <li><a href="web4.html"><span class="nav-counter">16</span> Web 4.0</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="term-label">Term 06 &mdash; DNS</div>
+    <h1>Domain Name Server</h1>
+    <p class="tagline">The Internet's distributed phonebook — translating human-readable domain names into numerical IP addresses that computers understand.</p>
+  </div>
+
+  <div class="content">
+    <div class="img-block">
+      <img src="images/dns.svg" alt="DNS resolution diagram showing domain to IP lookup" />
+      <div class="img-caption">&#9654; DNS resolution — converting names to numbers behind the scenes.</div>
+    </div>
+
+    <div class="section">
+      <h2>What is DNS?</h2>
+      <p>The Domain Name System (DNS) is a hierarchical, distributed database that maps human-friendly domain names (like <em>www.example.com</em>) to machine-readable IP addresses (like <em>93.184.216.34</em>). Without DNS, users would need to memorise numeric IP addresses to visit websites.</p>
+    </div>
+    <div class="section">
+      <h2>How DNS Resolution Works</h2>
+      <p>When you type a URL into your browser, DNS resolution happens in milliseconds:</p><div class="highlight-box"><span class="label">Resolution Steps</span><p>1. Browser checks local cache → 2. Queries OS resolver → 3. Queries Recursive Resolver (usually your ISP) → 4. Queries Root Nameserver → 5. Queries TLD Nameserver (.com, .org) → 6. Queries Authoritative Nameserver → 7. IP address returned.</p></div>
+    </div>
+    <div class="section">
+      <h2>DNS Record Types</h2>
+      <div class="key-facts"><div class="fact"><span class="fact-label">A Record</span><p>Maps a domain to an IPv4 address.</p></div><div class="fact"><span class="fact-label">AAAA Record</span><p>Maps a domain to an IPv6 address.</p></div><div class="fact"><span class="fact-label">CNAME Record</span><p>Aliases one domain to another domain.</p></div><div class="fact"><span class="fact-label">MX Record</span><p>Directs email to the correct mail server.</p></div></div>
+    </div>
+    <div class="section">
+      <h2>Security Concerns</h2>
+      <p>DNS was originally designed without security in mind. Modern enhancements include <strong>DNSSEC</strong> (DNS Security Extensions) to prevent spoofing, and <strong>DNS over HTTPS (DoH)</strong> or <strong>DNS over TLS (DoT)</strong> to encrypt DNS queries and protect user privacy.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="url.html">← <div><span>URL</span>Previous</div></a>
+    <a href="http.html"><div><span>HTTP</span>Next</div> →</a>
+  </div>
+</main>
+
+</body>
+</html>

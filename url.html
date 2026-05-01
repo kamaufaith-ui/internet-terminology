@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uniform Resource Locators — Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h2>Internet Terminology</h2>
+    <p>Topic 1 — Reference</p>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="www.html"><span class="nav-counter">01</span> World Wide Web</a></li>
+    <li><a href="tcp-ip.html"><span class="nav-counter">02</span> TCP/IP</a></li>
+    <li><a href="web-browsers.html"><span class="nav-counter">03</span> Web Browsers</a></li>
+    <li><a href="web-servers.html"><span class="nav-counter">04</span> Web Servers</a></li>
+    <li><a href="url.html" class="active"><span class="nav-counter">05</span> URL</a></li>
+    <li><a href="dns.html"><span class="nav-counter">06</span> DNS</a></li>
+    <li><a href="http.html"><span class="nav-counter">07</span> HTTP</a></li>
+    <li><a href="intranet.html"><span class="nav-counter">08</span> Intranet</a></li>
+    <li><a href="extranet.html"><span class="nav-counter">09</span> Extranet</a></li>
+    <li><a href="multitier.html"><span class="nav-counter">10</span> Multitier Architecture</a></li>
+    <li><a href="ftp.html"><span class="nav-counter">11</span> FTP</a></li>
+    <li><a href="html.html"><span class="nav-counter">12</span> HTML</a></li>
+    <li><a href="web1.html"><span class="nav-counter">13</span> Web 1.0</a></li>
+    <li><a href="web2.html"><span class="nav-counter">14</span> Web 2.0</a></li>
+    <li><a href="web3.html"><span class="nav-counter">15</span> Web 3.0</a></li>
+    <li><a href="web4.html"><span class="nav-counter">16</span> Web 4.0</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="term-label">Term 05 &mdash; URL</div>
+    <h1>Uniform Resource Locators</h1>
+    <p class="tagline">Standardised addresses that uniquely identify every resource available on the World Wide Web.</p>
+  </div>
+
+  <div class="content">
+    <div class="img-block">
+      <img src="images/url.svg" alt="Browser address bar showing a URL" />
+      <div class="img-caption">&#9654; A URL — the universal address system of the Web.</div>
+    </div>
+
+    <div class="section">
+      <h2>What is a URL?</h2>
+      <p>A Uniform Resource Locator (URL) is the address used to access a specific resource on the Internet. Every web page, image, video, and file on the Web has its own unique URL. URLs follow a standardised format defined by RFC 3986.</p>
+    </div>
+    <div class="section">
+      <h2>Anatomy of a URL</h2>
+      <div class="highlight-box"><span class="label">Example</span><p><strong>https://www.example.com:443/path/page.html?id=5#section</strong></p></div><div class="key-facts"><div class="fact"><span class="fact-label">Scheme</span><p><em>https://</em> — the protocol to use (HTTP, HTTPS, FTP).</p></div><div class="fact"><span class="fact-label">Domain</span><p><em>www.example.com</em> — the host, resolved by <a href="dns.html">DNS</a>.</p></div><div class="fact"><span class="fact-label">Port</span><p><em>:443</em> — optional; defaults to 80 (HTTP) or 443 (HTTPS).</p></div><div class="fact"><span class="fact-label">Path</span><p><em>/path/page.html</em> — the specific resource location on the server.</p></div><div class="fact"><span class="fact-label">Query</span><p><em>?id=5</em> — parameters passed to the server.</p></div><div class="fact"><span class="fact-label">Fragment</span><p><em>#section</em> — a specific part of the page.</p></div></div>
+    </div>
+    <div class="section">
+      <h2>URLs vs URIs vs URNs</h2>
+      <p>A URL is a type of URI (Uniform Resource Identifier). While all URLs are URIs, not all URIs are URLs. A URN (Uniform Resource Name) identifies a resource by name without describing how to find it — for example, an ISBN number for a book.</p>
+    </div>
+    <div class="section">
+      <h2>Importance</h2>
+      <p>URLs are the hyperlink foundation of the <a href="www.html">World Wide Web</a>. They enable bookmarking, sharing, search engine indexing, and the entire concept of navigating between pages. Their standardised structure ensures they work consistently across all browsers and servers.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="web-servers.html">← <div><span>Web Servers</span>Previous</div></a>
+    <a href="dns.html"><div><span>DNS</span>Next</div> →</a>
+  </div>
+</main>
+
+</body>
+</html>

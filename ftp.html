@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Transfer Protocol — Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <h2>Internet Terminology</h2>
+    <p>Topic 1 — Reference</p>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="www.html"><span class="nav-counter">01</span> World Wide Web</a></li>
+    <li><a href="tcp-ip.html"><span class="nav-counter">02</span> TCP/IP</a></li>
+    <li><a href="web-browsers.html"><span class="nav-counter">03</span> Web Browsers</a></li>
+    <li><a href="web-servers.html"><span class="nav-counter">04</span> Web Servers</a></li>
+    <li><a href="url.html"><span class="nav-counter">05</span> URL</a></li>
+    <li><a href="dns.html"><span class="nav-counter">06</span> DNS</a></li>
+    <li><a href="http.html"><span class="nav-counter">07</span> HTTP</a></li>
+    <li><a href="intranet.html"><span class="nav-counter">08</span> Intranet</a></li>
+    <li><a href="extranet.html"><span class="nav-counter">09</span> Extranet</a></li>
+    <li><a href="multitier.html"><span class="nav-counter">10</span> Multitier Architecture</a></li>
+    <li><a href="ftp.html" class="active"><span class="nav-counter">11</span> FTP</a></li>
+    <li><a href="html.html"><span class="nav-counter">12</span> HTML</a></li>
+    <li><a href="web1.html"><span class="nav-counter">13</span> Web 1.0</a></li>
+    <li><a href="web2.html"><span class="nav-counter">14</span> Web 2.0</a></li>
+    <li><a href="web3.html"><span class="nav-counter">15</span> Web 3.0</a></li>
+    <li><a href="web4.html"><span class="nav-counter">16</span> Web 4.0</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="term-label">Term 11 &mdash; FTP / SFTP</div>
+    <h1>File Transfer Protocol</h1>
+    <p class="tagline">A standard network protocol used to transfer files between a client and a server over a TCP-based network.</p>
+  </div>
+
+  <div class="content">
+    <div class="img-block">
+      <img src="images/ftp.svg" alt="FTP client software showing file transfer between local and remote servers" />
+      <div class="img-caption">&#9654; FTP — the workhorse protocol for moving files across networks.</div>
+    </div>
+
+    <div class="section">
+      <h2>What is FTP?</h2>
+      <p>File Transfer Protocol (FTP) is one of the oldest Internet protocols, designed specifically for transferring files between computers on a network. It uses a client-server model and relies on <a href="tcp-ip.html">TCP/IP</a> for transport. FTP was defined in 1971 and standardised in RFC 959 in 1985.</p>
+    </div>
+    <div class="section">
+      <h2>How FTP Works</h2>
+      <p>FTP uses <strong>two separate connections</strong> between client and server:</p><div class="key-facts"><div class="fact"><span class="fact-label">Control Connection (Port 21)</span><p>Used to send commands (login, list directory, request file) and receive status responses.</p></div><div class="fact"><span class="fact-label">Data Connection (Port 20)</span><p>Used to actually transfer file data. Opened separately for each file transfer.</p></div></div>
+    </div>
+    <div class="section">
+      <h2>FTP Variants</h2>
+      <div class="highlight-box"><span class="label">Security Evolution</span><p><strong>FTP</strong> — original; transmits credentials in plain text (insecure). <strong>FTPS</strong> — FTP with SSL/TLS encryption. <strong>SFTP</strong> — SSH File Transfer Protocol; completely different, fully encrypted (the modern standard). <strong>SCP</strong> — Secure Copy; simpler SSH-based transfer.</p></div>
+    </div>
+    <div class="section">
+      <h2>Modern Usage</h2>
+      <p>While SFTP has largely replaced plain FTP for security reasons, FTP/SFTP remains widely used for web hosting management, uploading files to <a href="web-servers.html">web servers</a>, distributing software, and automated system-to-system file transfers in enterprise environments.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="multitier.html">← <div><span>Multitier Architecture</span>Previous</div></a>
+    <a href="html.html"><div><span>HTML</span>Next</div> →</a>
+  </div>
+</main>
+
+</body>
+</html>
