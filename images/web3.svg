@@ -20,7 +20,7 @@
   <!-- Title -->
   <text x="60" y="180" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="white" opacity="0.95">Web 3.0</text>
   <!-- Subtitle -->
-  <text x="62" y="228" font-family="monospace" font-size="14" fill="#a78bfa" opacity="0.85" letter-spacing="2">The Semantic & Decentralised Web</text>
+  <text x="62" y="228" font-family="monospace" font-size="14" fill="#a78bfa" opacity="0.85" letter-spacing="2">The Semantic &amp; Decentralised Web</text>
   <!-- Corner tag -->
   <rect x="0" y="0" width="4" height="400" fill="#a78bfa" opacity="0.8"/>
   <!-- Dot pattern -->
